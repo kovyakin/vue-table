@@ -1,0 +1,37 @@
+{
+    "name": "kovyakin/vue-table",
+    "description": "This is package - generate table with vue",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kovyakin",
+            "email": "info@php-developer.ru",
+            "homepage": "http://php-developer.ru"
+        }
+    ],
+    "homepage": "https://github.com/kovyakin/vue-table",
+    "keywords": ["Laravel", "VueTable"],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kovyakin\\VueTable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kovyakin\\VueTable\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kovyakin\\VueTable\\VueTableServiceProvider"
+            ],
+            "aliases": {
+                "VueTable": "Kovyakin\\VueTable\\Facades\\VueTable"
+            }
+        }
+    }
+}
