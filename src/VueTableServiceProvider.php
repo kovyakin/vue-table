@@ -69,6 +69,9 @@ class VueTableServiceProvider extends ServiceProvider
             __DIR__.'/../config/vue-table.php' => config_path('vue-table.php'),
         ], 'vue-table.config');
 
+        $this->publishes([
+            __DIR__.'/../public' => public_path('kovyakin/vue-table'),
+        ], 'public');
         // Publishing the views.
         /*$this->publishes([
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/kovyakin'),
