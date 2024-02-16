@@ -4,6 +4,7 @@ namespace Kovyakin\VueTable;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Kovyakin\VueTable\Console\Commands\InstallCommand;
 
 class VueTableServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,10 @@ class VueTableServiceProvider extends ServiceProvider
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
+            $this->commands([
+                InstallCommand::class,
+//                NetworkCommand::class,
+            ]);
         }
     }
 
