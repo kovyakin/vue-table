@@ -13,6 +13,8 @@ class VueTableServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+//        Blade::componentNamespace('Kovyakin\\View\\Components','table');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'kovyakin');
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'kovyakin');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'kovyakin');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
