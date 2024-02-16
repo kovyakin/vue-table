@@ -11,6 +11,7 @@ class Table extends Component
 
     public function __construct()
     {
+        dd(1);
     }
 
     /**
@@ -18,6 +19,6 @@ class Table extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('kovyakin::components.table');
+//        return view('kovyakin::components.table');
     }
 }

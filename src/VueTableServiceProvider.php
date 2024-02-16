@@ -2,6 +2,7 @@
 
 namespace Kovyakin\VueTable;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class VueTableServiceProvider extends ServiceProvider

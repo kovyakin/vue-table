@@ -4,5 +4,7 @@ namespace Kovyakin\VueTable;
 
 class VueTable
 {
-    // Build wonderful things
+  public function index(){
+      dd(123);
+  }
 }
